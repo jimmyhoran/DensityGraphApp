@@ -1,0 +1,11 @@
+framework module DensityDataAPI {
+  umbrella header "DensityDataAPI.h"
+
+  export *
+  module * { export * }
+}
+
+module DensityDataAPI.Swift {
+    header "DensityDataAPI-Swift.h"
+    requires objc
+}

@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE4A34AA22B08CAF00F34207 /* DensityGraphViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A34A922B08CAF00F34207 /* DensityGraphViewTests.swift */; };
+		BE8E00D922A87E7A00CADE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E00D822A87E7A00CADE29 /* AppDelegate.swift */; };
+		BE8E00DB22A87E7A00CADE29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E00DA22A87E7A00CADE29 /* ViewController.swift */; };
+		BE8E00E022A87E7B00CADE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8E00DF22A87E7B00CADE29 /* Assets.xcassets */; };
+		BE8E00F922A87F1C00CADE29 /* DensityDataAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8E00F822A87F1C00CADE29 /* DensityDataAPI.framework */; };
+		BE8E00FA22A87F1C00CADE29 /* DensityDataAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE8E00F822A87F1C00CADE29 /* DensityDataAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE8E010222A87FB200CADE29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8E010022A87FB100CADE29 /* LaunchScreen.storyboard */; };
+		BE8E010422A8803900CADE29 /* DensityDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E010322A8803900CADE29 /* DensityDataManager.swift */; };
+		BE8E010622A8805B00CADE29 /* DensityDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E010522A8805B00CADE29 /* DensityDataService.swift */; };
+		BE8E010822A8808700CADE29 /* MockDensityDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E010722A8808700CADE29 /* MockDensityDataService.swift */; };
+		BE8E011022A8939300CADE29 /* DensityDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E010F22A8939300CADE29 /* DensityDataManagerTests.swift */; };
+		BE8E011222A8A85600CADE29 /* DensityGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E011122A8A85600CADE29 /* DensityGraphView.swift */; };
+		BE8E011622A9095300CADE29 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E011522A9095300CADE29 /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE8E00EA22A87E7B00CADE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE8E00CD22A87E7A00CADE29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE8E00D422A87E7A00CADE29;
+			remoteInfo = DensityGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE8E00FB22A87F1D00CADE29 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE8E00FA22A87F1C00CADE29 /* DensityDataAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE4A34A922B08CAF00F34207 /* DensityGraphViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DensityGraphViewTests.swift; sourceTree = "<group>"; };
+		BE8E00D522A87E7A00CADE29 /* DensityGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DensityGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8E00D822A87E7A00CADE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE8E00DA22A87E7A00CADE29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE8E00DF22A87E7B00CADE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE8E00E422A87E7B00CADE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8E00E922A87E7B00CADE29 /* DensityGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DensityGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8E00EF22A87E7B00CADE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8E00F822A87F1C00CADE29 /* DensityDataAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DensityDataAPI.framework; sourceTree = "<group>"; };
+		BE8E00FD22A87F3500CADE29 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE8E010122A87FB100CADE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE8E010322A8803900CADE29 /* DensityDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DensityDataManager.swift; sourceTree = "<group>"; };
+		BE8E010522A8805B00CADE29 /* DensityDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DensityDataService.swift; sourceTree = "<group>"; };
+		BE8E010722A8808700CADE29 /* MockDensityDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDensityDataService.swift; sourceTree = "<group>"; };
+		BE8E010F22A8939300CADE29 /* DensityDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DensityDataManagerTests.swift; sourceTree = "<group>"; };
+		BE8E011122A8A85600CADE29 /* DensityGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DensityGraphView.swift; sourceTree = "<group>"; };
+		BE8E011522A9095300CADE29 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE8E00D222A87E7A00CADE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8E00F922A87F1C00CADE29 /* DensityDataAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8E00E622A87E7B00CADE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE8E00CC22A87E7A00CADE29 = {
+			isa = PBXGroup;
+			children = (
+				BE8E00F822A87F1C00CADE29 /* DensityDataAPI.framework */,
+				BE8E00D722A87E7A00CADE29 /* DensityGraph */,
+				BE8E00EC22A87E7B00CADE29 /* DensityGraphTests */,
+				BE8E00D622A87E7A00CADE29 /* Products */,
+				BE8E00FD22A87F3500CADE29 /* README.md */,
+				BE8E010922A8893A00CADE29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE8E00D622A87E7A00CADE29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E00D522A87E7A00CADE29 /* DensityGraph.app */,
+				BE8E00E922A87E7B00CADE29 /* DensityGraphTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE8E00D722A87E7A00CADE29 /* DensityGraph */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E00D822A87E7A00CADE29 /* AppDelegate.swift */,
+				BE8E00DF22A87E7B00CADE29 /* Assets.xcassets */,
+				BE8E00E422A87E7B00CADE29 /* Info.plist */,
+				BE8E010022A87FB100CADE29 /* LaunchScreen.storyboard */,
+				BE8E00DA22A87E7A00CADE29 /* ViewController.swift */,
+				BE8E010322A8803900CADE29 /* DensityDataManager.swift */,
+				BE8E010522A8805B00CADE29 /* DensityDataService.swift */,
+				BE8E011122A8A85600CADE29 /* DensityGraphView.swift */,
+				BE8E011522A9095300CADE29 /* LoadingView.swift */,
+			);
+			path = DensityGraph;
+			sourceTree = "<group>";
+		};
+		BE8E00EC22A87E7B00CADE29 /* DensityGraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E00EF22A87E7B00CADE29 /* Info.plist */,
+				BE8E010722A8808700CADE29 /* MockDensityDataService.swift */,
+				BE8E010F22A8939300CADE29 /* DensityDataManagerTests.swift */,
+				BE4A34A922B08CAF00F34207 /* DensityGraphViewTests.swift */,
+			);
+			path = DensityGraphTests;
+			sourceTree = "<group>";
+		};
+		BE8E010922A8893A00CADE29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE8E00D422A87E7A00CADE29 /* DensityGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8E00F222A87E7B00CADE29 /* Build configuration list for PBXNativeTarget "DensityGraph" */;
+			buildPhases = (
+				BE8E00D122A87E7A00CADE29 /* Sources */,
+				BE8E00D222A87E7A00CADE29 /* Frameworks */,
+				BE8E00D322A87E7A00CADE29 /* Resources */,
+				BE8E00FB22A87F1D00CADE29 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DensityGraph;
+			productName = DensityGraph;
+			productReference = BE8E00D522A87E7A00CADE29 /* DensityGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE8E00E822A87E7B00CADE29 /* DensityGraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8E00F522A87E7B00CADE29 /* Build configuration list for PBXNativeTarget "DensityGraphTests" */;
+			buildPhases = (
+				BE8E00E522A87E7B00CADE29 /* Sources */,
+				BE8E00E622A87E7B00CADE29 /* Frameworks */,
+				BE8E00E722A87E7B00CADE29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE8E00EB22A87E7B00CADE29 /* PBXTargetDependency */,
+			);
+			name = DensityGraphTests;
+			productName = DensityGraphTests;
+			productReference = BE8E00E922A87E7B00CADE29 /* DensityGraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE8E00CD22A87E7A00CADE29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "James Horan";
+				TargetAttributes = {
+					BE8E00D422A87E7A00CADE29 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BE8E00E822A87E7B00CADE29 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BE8E00D422A87E7A00CADE29;
+					};
+				};
+			};
+			buildConfigurationList = BE8E00D022A87E7A00CADE29 /* Build configuration list for PBXProject "DensityGraph" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE8E00CC22A87E7A00CADE29;
+			productRefGroup = BE8E00D622A87E7A00CADE29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE8E00D422A87E7A00CADE29 /* DensityGraph */,
+				BE8E00E822A87E7B00CADE29 /* DensityGraphTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE8E00D322A87E7A00CADE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8E00E022A87E7B00CADE29 /* Assets.xcassets in Resources */,
+				BE8E010222A87FB200CADE29 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8E00E722A87E7B00CADE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE8E00D122A87E7A00CADE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8E011222A8A85600CADE29 /* DensityGraphView.swift in Sources */,
+				BE8E010422A8803900CADE29 /* DensityDataManager.swift in Sources */,
+				BE8E00DB22A87E7A00CADE29 /* ViewController.swift in Sources */,
+				BE8E010622A8805B00CADE29 /* DensityDataService.swift in Sources */,
+				BE8E011622A9095300CADE29 /* LoadingView.swift in Sources */,
+				BE8E00D922A87E7A00CADE29 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8E00E522A87E7B00CADE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8E010822A8808700CADE29 /* MockDensityDataService.swift in Sources */,
+				BE8E011022A8939300CADE29 /* DensityDataManagerTests.swift in Sources */,
+				BE4A34AA22B08CAF00F34207 /* DensityGraphViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE8E00EB22A87E7B00CADE29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE8E00D422A87E7A00CADE29 /* DensityGraph */;
+			targetProxy = BE8E00EA22A87E7B00CADE29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE8E010022A87FB100CADE29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE8E010122A87FB100CADE29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE8E00F022A87E7B00CADE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE8E00F122A87E7B00CADE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE8E00F322A87E7B00CADE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YTMM5WCX3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DensityGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jimmyhoran.app.densitygraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE8E00F422A87E7B00CADE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YTMM5WCX3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DensityGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jimmyhoran.app.densitygraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE8E00F622A87E7B00CADE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YTMM5WCX3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DensityGraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jimmyhoran.app.DensityGraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DensityGraph.app/DensityGraph";
+			};
+			name = Debug;
+		};
+		BE8E00F722A87E7B00CADE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YTMM5WCX3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DensityGraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jimmyhoran.app.DensityGraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DensityGraph.app/DensityGraph";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE8E00D022A87E7A00CADE29 /* Build configuration list for PBXProject "DensityGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8E00F022A87E7B00CADE29 /* Debug */,
+				BE8E00F122A87E7B00CADE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8E00F222A87E7B00CADE29 /* Build configuration list for PBXNativeTarget "DensityGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8E00F322A87E7B00CADE29 /* Debug */,
+				BE8E00F422A87E7B00CADE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8E00F522A87E7B00CADE29 /* Build configuration list for PBXNativeTarget "DensityGraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8E00F622A87E7B00CADE29 /* Debug */,
+				BE8E00F722A87E7B00CADE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE8E00CD22A87E7A00CADE29 /* Project object */;
+}
