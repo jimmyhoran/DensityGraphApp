@@ -1,5 +1,10 @@
 # Density Graph by James Horan
 
+## Requirements
+
+- Xcode 10.3.0
+- Swift 4.2.1
+
 ## Getting started
 
 - The app has a simple single project workspace; A Xcode workspace is not needed.
